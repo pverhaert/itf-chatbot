@@ -2,6 +2,9 @@ import streamlit as st
 from groq import Groq
 from config import *
 
+FAVICON = "./assets/logo-tm.png"
+st.set_page_config(page_title="ITF Chatbot", page_icon=FAVICON, layout="wide")
+
 with open('./assets/style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 

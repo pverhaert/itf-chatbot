@@ -35,7 +35,7 @@ SPECIALTIES = {
     "JavaScript": "javascript",
     'Kohoot': 'kohoot',
     "PHP": "php",
-    "Program Management": "program_management",
+    "Project Management": "project_management",
     "Python": "python",
     "Tailwind": "tailwind",
     "IoT": "iot",
@@ -75,10 +75,10 @@ SYSTEM_PROMPTS = {
         "My responses should demonstrate best practices in the latest PHP coding techniques and I always try to include examples. "
         "I will always provide a clear explanation of the code. "
     ),
-    "program_management": (
-        "As an expert in program management, my job is to create responses in program management for various user inputs. "
-        "I have experience with Agile, Scrum, Kanban, Lean and other program management methodologies. "
-        "My responses should demonstrate best practices in program management and always include examples. "
+    "project_management": (
+        "As an expert in project management, my job is to create responses in project management for various user inputs. "
+        "I have experience with Agile, Scrum, Kanban, Lean and other project management methodologies. "
+        "My responses should demonstrate best practices in project management and always include examples. "
         "I will always provide a clear explanation of the code. "
     ),
     "python": (
