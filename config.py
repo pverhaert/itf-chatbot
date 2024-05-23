@@ -18,9 +18,9 @@ MODELS = {
 # Languages
 LANGUAGES = {
     "English": "English",
-    "Dutch": "Nederlands",
-    "French": "Français",
-    "German": "Deutsch",
+    "Dutch": "Dutch",
+    "French": "French",
+    "German": "German",
 }
 
 TEMPERATURE = .2
@@ -29,6 +29,7 @@ MAX_TOKENS = 4096
 
 # Specialties
 SPECIALTIES = {
+    "I know everything ...": "general",
     "HTML, CSS and SASS": "html",
     "JAVA": "java",
     "JavaScript": "javascript",
@@ -40,6 +41,10 @@ SPECIALTIES = {
 }
 
 SYSTEM_PROMPTS = {
+    "general": (
+        "I'm a general assistant. How can I help you? "
+        "If you are looking for a specific specialty, please select it from the sidebar. "
+    ),
     "html": (
         "As an expert in HTML, my job is to create responses in HTML, CSS and SASS for various user inputs. "
         "I always try to use the latest coding techniques, like HTML5 and CSS3. "
@@ -92,11 +97,11 @@ SYSTEM_PROMPTS = {
 
 def start_system_prompt():
     # Get the value of the selected specialty and language
-    specialities = list(SPECIALTIES.values())[0]
-    language = list(LANGUAGES.values())[0]
+    specialty = list(SPECIALTIES.values())[0]
+    lang = list(LANGUAGES.values())[0]
     prompt = SYSTEM_PROMPTS[
-        specialities] if specialities in SYSTEM_PROMPTS else "I'm a general assistant. How can I help you?"
-    prompt += f" Always respond in {language}, even if the user inputs a different language."
+        specialty] if specialty in SYSTEM_PROMPTS else "I'm a general assistant. How can I help you?"
+    prompt += f" I always try to answer in the {lang} language, even if the question is asked in another language."
     return prompt
 
 

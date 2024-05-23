@@ -26,7 +26,7 @@ def update_system_prompt():
     lang = LANGUAGES.get(st.session_state.language)
     prompt = SYSTEM_PROMPTS[
         specialty] if specialty in SYSTEM_PROMPTS else "I'm a general assistant. How can I help you?"
-    prompt += f" Always respond in {lang}, even if the user inputs a different language."
+    prompt += f" I always try to answer in the {lang} language, even if the question is asked in another language."
     st.session_state.messages[0]["content"] = prompt
 
 
