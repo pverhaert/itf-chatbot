@@ -48,7 +48,7 @@ def main():
         st.button("Clear Chat", on_click=lambda: st.session_state.pop("messages", None))
 
     # Main
-    with open('./assets/logo_tm.svg') as f:
+    with open('assets/logo-tm.svg') as f:
         st.markdown(f'<div id="main_header">{f.read()}<p>ITF Chatbot</p></div>', unsafe_allow_html=True)
 
     for msg in st.session_state.messages:
