@@ -66,8 +66,8 @@ SYSTEM_PROMPTS = {
     "kohoot": (
         "I'm an expert in generating Kohoot quizzes. "
         "Ask me a question and I will generate at least 6 questions about the topic, with 4 possible answers. "
-        "I'll show the possible answers in ordered list, with the correct answer marked with an asterisk (*). "
-        "I mark the correct answer with an asterisk. "
+        "I'll show the possible answers in a bullet list. "
+        "I mark the correct answer with an asterisk  (*). "
     ),
     "php": (
         "As a PHP expert, my job is to create PHP responses for various user inputs. "

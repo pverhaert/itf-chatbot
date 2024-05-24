@@ -16,6 +16,11 @@ Ensure you have Python 3.11 or higher installed on your system. Streamlit and ot
 1. Clone the repository: `git clone https://github.com/pverhaert/itf-groq-chatbot.git`
 2. Navigate to the project directory: `cd itf-groq-chatbot`
 3. Set up a virtual environment (optional but recommended)
+    - Open a command prompt (Windows: type `cmd` in the path bar at the top of the file explorer; Linux/macOS: open a terminal)
+    - Create a virtual environment: `python -m venv .venv`
+    - Activate the virtual environment:
+        - Windows: `.venv\Scripts\activate.bat`
+        - Linux/macOS: `source .venv/bin/activate`
 4. Install the required Python packages: `pip install -r requirements.txt`
 
 ## Configuration
@@ -30,7 +35,7 @@ Once you have your API key, you need to set it in your environment:
 This step is crucial for the application to interact with Groq's services securely.
 
 ## Running the Application
-To run the application, use the following command: `streamlit run main.py`
+To run the application, activate your virtual environment (if you set one up) and use the following command: `streamlit run main.py`
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
